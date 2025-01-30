@@ -22,6 +22,47 @@ class _HomeState extends State<Home> {
 
 
       ),
+
+      body: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          children: [
+            TextField(
+
+              decoration: InputDecoration(
+                  hintText: "Enter your name",
+                  label: Text("Enter your name"),
+                  border: OutlineInputBorder(),
+
+              ),
+            ),
+            SizedBox(height: 20,),
+            TextField(
+
+              decoration: InputDecoration(
+                  hintText: "Enter your phone number",
+                  label: Text("Enter your phone numbe"),
+                  border: OutlineInputBorder(),
+                  
+              ),
+            ),
+            SizedBox(height: 20,),
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.grey,
+                  ),
+                  onPressed: (){},
+                  child: Text('Add',style: TextStyle(
+                color: Colors.white,
+                fontSize: 25,
+                fontWeight: FontWeight.bold
+              ),)),
+            )
+          ],
+        ),
+      ),
     ) ;
   }
 }
